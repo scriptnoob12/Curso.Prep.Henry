@@ -1,0 +1,15 @@
+01-
+Variables : Una variable es como una caja que puede guardar un valor u/o un texto,que puede ser usado y modificado cuando se necesite.
+Strings : Una String es un conjunto de letras que pueden formar una o más palabras, y se guarda en una variable de tipo obviamente String. 
+Funciones : Una Función es como una computadora, vos le das una instrucción y esta te devuelve un valor o una respusta.
+    - Funciones con valores/ parametros: {
+        Tomemos de ejemplo una función de suma:
+            Esta le indicas dos valores en forma de parametro o argumento, esta realiza internamente una
+         operación matemática y devolverá una suma.
+         En esto incluye también lo que sería Return, este nos retornara o devolverá dicho valor calculado.
+    }
+If: El if es un flujo de control, nos permite preguntarnos si algo es como queríamos o como debe ser. Ejemplo:
+if(misdedos < 10){  // Misdedos = Suma total de los dedos en las dos manos.
+    Nos devolverá verdadero y mostrará el contenido establecido aquí.
+}
+Valores booleanos: Es como preguntar : si o no, que en inglés es true o false.
