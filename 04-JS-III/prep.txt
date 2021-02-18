@@ -1,0 +1,5 @@
+Array: Un Array es como un tren con vagones, donde cada vagón almacenaría un dato. 
+Si utilizamos el método pop, le quitaríamos un último vagón y este tren se achicaría.
+Si utilizamos el método push, le agregaríamos un nuevo vagón y este tren se alargará.
+El length nos daría la cantidad de vagones incluido la locomotora.
+Si queremos saber la cantidad de vagones del tren, tenemos que contarlo sin la locomotora. length - 1
