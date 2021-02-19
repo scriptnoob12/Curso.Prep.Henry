@@ -1,0 +1,12 @@
+Objetos: Los objetos son como cajas que contienen muchas herramientas dentro. Esta se divide en secciones llamadas propiedades
+que identifican a cada elemento.
+Propiedades: Identifican a los objetos, en caso de javascript es un valor, en una caja de herramienta es el nombre de la herramienta, o clavos con su cantidad .
+herramienta: 'martillo',
+clavos:5
+
+Métodos: Los métodos son funciones que se encuentran dentro de los objetos.
+bucle for in: Recorre las propiedades de los objetos 1x1.
+Notación punto y Notación de corchete:La notación punto , y la notación corchete, sirven para acceder a las propiedades del objeto.
+La diferencia entre estas dos es que la notación corchete nos permite acceder tipo cadena y esto nos brinda
+la posibilidad de usar espacio entre palabras. En cambio con la notación punto no puede acceder a esta.
+Incluso si tenemos que acceder desde una variable, sólo podremos acceder desde la notación corchete.
