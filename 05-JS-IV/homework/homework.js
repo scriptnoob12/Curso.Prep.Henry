@@ -22,7 +22,7 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-  objeto.[property]=null;
+  objeto[property]=null;
   return objeto;
 }
 
@@ -46,7 +46,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete objeto.[unaPropiedad];
+  delete objeto[unaPropiedad];
   return objeto;
 }
 
@@ -66,7 +66,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario.['email'] !== null && usuario.['email'] !== undefined) {
+  if (usuario['email'] !== null && usuario['email'] !== undefined) {
     return true;
   }else return false;
 }
@@ -103,7 +103,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario.['password']=nuevaPassword;
+  usuario['password']=nuevaPassword;
   return usuario;
 }
 
@@ -112,7 +112,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
-  usuario.['amigos'].push(nuevoAmigo);
+  usuario['amigos'].push(nuevoAmigo);
   return usuario;
 }
 
@@ -123,7 +123,7 @@ function pasarUsuarioAPremium(usuarios) {
   // Devuelve el array de usuarios
   // Tu código:
   for (const prop in usuarios) {
-      usuarios.[prop].['esPremium']=true;
+      usuarios[prop]['esPremium']=true;
   }
   return usuarios;
 }
@@ -156,7 +156,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // Tu código:
 
     producto.calcularPrecioDescuento=function () {
-      return producto.['precio'] - (producto.['precio'] * producto.['porcentajeDeDescuento']);
+      return producto['precio'] - (producto['precio'] * producto['porcentajeDeDescuento']);
     };
     return producto;
 }
