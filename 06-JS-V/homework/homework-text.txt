@@ -1,0 +1,5 @@
+Prototype: El prototype es como la entrar en la raiz de un objeto global/general. Con este mismo podemos 
+invocar o crear funciones para un objeto general. Esto nos ayudará a simplfiicar código y recursos.
+
+_Constructors_: El constructor es un método que se utiliza en las clases para integrar los valores iniciales 
+a los objetos creados con esa misma clase.
