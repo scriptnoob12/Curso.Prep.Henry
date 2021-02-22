@@ -1,0 +1,2 @@
+* Funciones Callback
+Se dice que son funciones callback a las funciones que se utilizan dentro de otras funciones con argumentos.
