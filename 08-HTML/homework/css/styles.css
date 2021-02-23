@@ -1,0 +1,47 @@
+body{
+    background-image: url('https://blog.pixlr.com/wp-content/uploads/2019/03/stars-pattern.png');
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    
+}
+ul li{
+    list-style: none;
+}
+h1{
+    color:yellowgreen;
+}
+#contenedor {
+    text-align: center;
+}
+#main{
+    position:relative;
+    top:-65px;
+    float:right;
+}
+#thirdDiv{
+    margin:auto;
+    width: 600px;
+    height: 500px;
+    background-color: #111;
+    padding:50px;
+    border: black solid 2px;
+}
+#thirdDiv ul li{
+    padding:20px 20px;
+    border-radius: 15px 0 15px 0px;
+    display:inline-block;
+    background-color:yellowgreen;
+    
+}
+#thirdDiv img{
+    width: 50%;
+    display:inline-block;
+    padding:10px;
+    border: yellowgreen solid 10px;
+    border-radius: 10px;
+    box-sizing:content-box;
+    margin:auto;
+}
+#spanId{
+    margin:50px;
+}
+

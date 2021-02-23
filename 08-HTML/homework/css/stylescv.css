@@ -1,0 +1,55 @@
+body{
+    background:#222;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    margin:0;
+}
+header{
+    text-align: center;
+    top:auto;
+    background:black;
+    padding:20px;
+    border: 30px  black;
+    border-radius: 0px 0px 30px 30px;
+}
+#general{
+    padding-top:50px;
+    width: 50%;
+    margin:auto;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+ul li{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style:square;
+    color:#999;
+}
+h2 {
+    margin-left:70px;
+}
+.pm {
+    color:yellow;
+}
+.pb{
+    color:red;
+}
+.pa{
+    color:greenyellow;
+}
+footer{
+   position:absolute;
+    width:100%;
+    height: 150px;
+    background:black;
+    text-align: center;
+}
+footer p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+footer img{
+    float:left;
+    padding-left:50px;
+}
