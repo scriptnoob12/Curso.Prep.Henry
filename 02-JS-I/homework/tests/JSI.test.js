@@ -126,6 +126,7 @@ describe('tienenMismaLongitud(str1, str2)', function() {
   });
 });
 
+
 describe('menosQueNoventa(num)', function() {
   it('Deberia devolver true si el numero es menor a noventa sino false', function() {
     expect(menosQueNoventa(15)).toBe(true);

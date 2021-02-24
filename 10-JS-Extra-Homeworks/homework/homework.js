@@ -10,6 +10,9 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  
+    let arreglo=Object.entries(objeto);
+    return arreglo;
 }
 
 
@@ -18,6 +21,20 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  let array={};
+  let suma=0;
+  for (let j = 0; j < string.length; j++) {
+    for (let i = 0; i < string.length; i++) {
+        if(string[i] === string[j]){
+          suma++;
+        }
+      }
+      for (let x = 0; x < string.length; x++) {
+        if(array[x] !== string[j]) array.[string[j]]=suma;
+      } 
+      suma=0;
+  }
+  return array;
 }
 
 
@@ -26,6 +43,15 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  let palabramin="",palabramay="";
+  for (let i = 0; i < s.length; i++) {
+    if(s[i] === s[i].toUpperCase()){
+      palabramay=palabramay+s[i];
+    }else palabramin=palabramin+s[i];
+    
+  }
+  palabramay=palabramay+palabramin;
+  return palabramay;
 }
 
 
@@ -35,6 +61,20 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  let palabrad="",palabrao="";
+  for (let i = 0; i < str.length; i++) {
+    if(str[i] !== " "){
+      palabrad=palabrad +str[i];
+    }else {
+      if(palabrao !== ""){
+      palabrao=palabrao+ " "+ palabrad.split("").reverse().join("");
+      } else palabrao= palabrad.split("").reverse().join("");
+      palabrad="";
+
+    }
+    
+  }
+  return palabrao;
 } 
 
 
