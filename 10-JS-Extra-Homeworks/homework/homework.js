@@ -63,16 +63,15 @@ function asAmirror(str) {
   //Escribe tu código aquí
   let palabrad="",palabrao="";
   for (let i = 0; i < str.length; i++) {
-    if(str[i] !== " "){
+    if(str[i] !== " " ){
       palabrad=palabrad +str[i];
-    }else {
+    } 
+    if(str[i] === " " || str[i+1] ===undefined){
       if(palabrao !== ""){
       palabrao=palabrao+ " "+ palabrad.split("").reverse().join("");
       } else palabrao= palabrad.split("").reverse().join("");
       palabrad="";
-
     }
-    
   }
   return palabrao;
 } 
@@ -83,6 +82,11 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  let string=numero.toString();
+  let reverse=string.split("").reverse().join("");
+  if(string === reverse) {
+    return "Es capicua";
+  }else return "No es capicua";
 }
 
 
@@ -90,6 +94,11 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  let cad="";
+  for (let i = 0; i < cadena.length; i++) {
+    if(cadena[i] === "a" || cadena[i] === "b" || cadena[i] === "c"){}else cad=cad +cadena[i];
+  }
+  return cad;
 }
 
 
@@ -97,6 +106,17 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  let prov="";
+  for (let j = 1; j < arr.length; j++) {
+    for (let i = 0; i < arr.length-1;  i++) {
+      if(arr[i].length > arr[j].length){
+        prov=arr[i];
+        arr[i]=arr[j];
+        arr[j]=prov;
+      }
+    }
+  }
+  return arr;
 }
 
 
@@ -106,6 +126,13 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  let array=[];
+  for (let j = 0; j < arreglo2.length; j++) {
+    for (let i = 0; i < arreglo1.length; i++) {
+      if(arreglo1[i] === arreglo2[j]) array.push(arreglo1[i]);
+    }
+  }
+  return array;
 }
 
 
